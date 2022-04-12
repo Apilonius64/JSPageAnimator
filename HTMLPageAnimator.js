@@ -10,7 +10,7 @@ function insert(content){
         if(scripts[i].src = ""){
             eval(scripts[i].innerHTML);
         }
-        {
+        else {
             var ntag = document.createElement("script");
             ntag.src = scripts[i].src;
             document.getElementsByTagName("head")[0].appendChild(ntag);
