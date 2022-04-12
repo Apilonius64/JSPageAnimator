@@ -1,4 +1,4 @@
-# HtmlPageAnimator
+# JSPageAnimator
 Adds an EventListener to each html "a" tag and loads links with an animation using an XMLHttpRequest.
 ## Getting started
 Here is a small indrotuction to HTMLPageAnimator. Look at folder example for more.
