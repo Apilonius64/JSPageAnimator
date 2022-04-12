@@ -56,7 +56,7 @@ Choose your animation for your link using "data-animation" property. Actually th
 </html>
 ```
 ### More
-If your code don't work look at the examples.
+If your code don't work or you need more information look at the examples or checkout the wiki.
 
 ## License
 This repository and all its contents all licensed under the MIT license. Look at the [LICENSE](https://github.com/Apilonius64/HTMLPageAnimator/blob/main/LICENSE)  file for more information
