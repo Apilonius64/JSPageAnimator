@@ -59,4 +59,4 @@ Choose your animation for your link using "data-animation" property. Actually th
 If your code don't work look at the examples.
 
 ## License
-This repository and all its contents all licensed under the MIT license. Look at the LICENSE file for more information
+This repository and all its contents all licensed under the MIT license. Look at the [LICENSE](https://github.com/Apilonius64/HTMLPageAnimator/blob/main/LICENSE)  file for more information
