@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(18, 18, 18);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    width: calc(100% - 20px);
+    padding: 5px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+h1{
+    border-bottom: 2px solid white;
+}
+a{
+    border: none;
+    border-bottom: 3px solid rgb(61, 61, 61);
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+    margin-right: 2px;
+}
+a:hover{
+    border-bottom: 3px solid white;
+}
+#menu{
+    background-color: rgb(49, 49, 49);
+    padding: 10px;
+    width: calc(100% - 20px);
+    z-index: 5;
+}

@@ -1,11 +1,18 @@
 var links;
 
-function insert(id, content){
-    var insertobj = document.getElementById(id);
+function insert(content){
+    var insertobj = document.getElementsByTagName("body")[0];
     insertobj.innerHTML = content;
     var scripts = insertobj.getElementsByTagName("script");
     for(var i=0;i<scripts.length;i++){
-        eval(scripts[i].innerHTML)
+        if(scripts[i].src = ""){
+            eval(scripts[i].innerHTML);
+        }
+        {
+            var ntag = document.createElement("script");
+            ntag.src = scripts[i].src;
+            document.getElementsByTagName("head")[0].appendChild(ntag);
+        }
     }
 }
 
@@ -23,25 +30,28 @@ function prepare(){
         }
     }
 }
-function ajax(curl, push_state = true){
+function animate(objs, duraction, state){
+    for(var i=0;i<objs.length;i++){
+        objs[i].style.animation = objs[i].dataset.animation + "-" + state + " " + duraction;
+    }
+}
+
+function ajax(url, push_state = true){
     var url;
-    if(curl.indexOf('?') > -1){
-        url = curl + "&ajax";
-    }
-    else{
-        url = curl + "?ajax";
-    }
-    document.getElementById("loadable_content").style.animation = "fadeout 0.5s";
+    var insert_at = document.getElementsByTagName("body")[0]
+    var parser = new DOMParser;
+    var animated_objects = document.getElementsByClassName("animated");
+    animate(animated_objects, "0.4s", "out");
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function() {
-        insert("loadable_content", this.responseText);
-        document.getElementById("loadable_content").style.animation = "fadein 0.5s";
+        insert(parser.parseFromString(this.responseText, "text/html").getElementsByTagName("body")[0].innerHTML);
+        animate(animated_objects, "1s", "in");
         prepare();
-        }
+    }
     xhttp.open("GET", url, true);
     xhttp.send();
     if(push_state){
-        window.history.pushState(curl, curl, curl);
+        window.history.pushState(url, url, url);
     }
 }
 
