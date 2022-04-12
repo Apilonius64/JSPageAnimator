@@ -1,3 +1,5 @@
+/*Include this file in your html head tag*/
+
 @keyframes fade-in{
     0%{
         opacity: 0;

@@ -1,3 +1,5 @@
+//Include this file in your html head tag
+
 var links;
 
 function insert(content){

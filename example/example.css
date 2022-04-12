@@ -8,9 +8,11 @@ body{
     left: 0px;
     position: absolute;
 }
+
 h1{
     border-bottom: 2px solid white;
 }
+
 a{
     border: none;
     border-bottom: 3px solid rgb(61, 61, 61);
@@ -19,9 +21,11 @@ a{
     padding: 4px;
     margin-right: 2px;
 }
+
 a:hover{
     border-bottom: 3px solid white;
 }
+
 #menu{
     background-color: rgb(49, 49, 49);
     padding: 10px;
