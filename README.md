@@ -1,7 +1,7 @@
 # JSPageAnimator
 Adds an EventListener to each html "a" tag and loads links with an animation using an XMLHttpRequest.
 ## Getting started
-Here is a small indrotuction to HTMLPageAnimator. Look at folder example for more.
+Here is a small indrotuction to JSPageAnimator. Look at folder example for more.
 ### Step 1
 Move the content which you want to animate in a div which belong to the class "animated" and put the following into your head tag:
 ```html
