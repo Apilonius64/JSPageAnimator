@@ -58,5 +58,7 @@ Choose your animation for your link using "data-animation" property. Actually th
 ### More
 If your code doesn't work or you need more information look at the examples or checkout the wiki.
 
+## Demo
+Look at the example at https://apilonius64.github.io/demos/JSPageAnimator/example/index.html
 ## License
 This repository and all its contents all licensed under the MIT license. Look at the [LICENSE](https://github.com/Apilonius64/JSPageAnimator/blob/main/LICENSE)  file for more information
